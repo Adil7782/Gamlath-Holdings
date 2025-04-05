@@ -5,7 +5,8 @@ export const Hero = () => {
   return (
     <>
       <div className="p-5 pt-8 pb-20 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_66%)]">
-        <div>
+        <div className="md:flex items-center">
+        <div className="md:w-[478px]">
           <div className="text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight">
             Version 2.0 is here
           </div>
@@ -26,8 +27,9 @@ export const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="mt-20">
-          <Image src={cogImage} alt="cog" />
+        <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
+          <Image src={cogImage} alt="cog" className="md:absolute md:h-full md:w-auto md:max-w-none md:left-6" />
+        </div>
         </div>
       </div>
     </>
