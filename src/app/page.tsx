@@ -1,3 +1,9 @@
+import { Navbar } from "@/sections/Header";
+
 export default function Home() {
-  return <h1>Hello world</h1>;
+  return (
+    <>
+    <Navbar />
+    </>
+  );
 }
