@@ -4,7 +4,7 @@ import MenuIcon from "../assets/menu.svg";
 export const Navbar = () => {
   return (
     <>
-      <div className="sticky top-0 backdrop-blur-sm">
+      <div className="sticky top-0 backdrop-blur-sm z-20">
         <div className="p-5 ">
           <div className=" ">
             <div className="flex justify-between items-center">
