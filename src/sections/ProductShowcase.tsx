@@ -9,14 +9,15 @@ export const ProductShowcase = () => {
       <section className="p-5 pt-24 bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF overflow-x-clip">
         <div className="">
           <div>
-            <div className="max-w-[540px] mx-auto">
+            <div className="section-heading">
             <div className="flex justify-center items-center">
             <div className="tag">
             Boost your productivity
             </div>
             </div>
-            <h2 className="text-center text-3xl md:text-5xl  md:leading-[55px] font-bold tracking-tight bg-gradient-to-b my-5 from-black to-[#001E80] text-transparent bg-clip-text">A more effective way to track progress</h2>
-            <p className="text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E]" >
+            <h2 className="section-title my-5">
+              A more effective way to track progress</h2>
+            <p className="section-desc" >
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
               fugit sapiente officiis ipsam sit maxime, sint atque, dolor nihil
               in deserunt nostrum iusto voluptatum{" "}
