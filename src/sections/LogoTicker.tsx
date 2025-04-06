@@ -13,6 +13,11 @@ export const LogoTicker = () => {
     <>
    <div className="py-8 md:pt-24 bg-white">
    <div className="container    ">
+   <div className="section-heading pt-6">
+          <h2 className="section-title my-5">Customers </h2>
+          <p className="section-desc my-6">
+          Join 1,200+ Sri Lankan Homes & Businesses Powered by Gamlath Solar          </p>
+          </div>
    <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
    <div className="flex gap-14 flex-none">
    <Image  src={acmeLogo} alt="Acme" className="logo-ticker-image " />

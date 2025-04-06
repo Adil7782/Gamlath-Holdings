@@ -18,12 +18,15 @@ export const Navbar = () => {
               <MenuIcon className="h-8 w-8 md:hidden" />
 
               <nav className="hidden md:flex gap-6 text-black/60 items-center">
-                <a href="#"> About</a>
-                <a href="#"> Features</a>
-                <a href="#"> Customers</a>
-                <a href="#"> Updates</a>
-                <a href="#"> Help</a>
-                <button className="bg-black text-white py-2 rounded-full px-4  font-medium inline-flex items-center justify-center tracking-tight">Get for free</button>
+                <a href="#about">About</a>
+                <a href="#customers">Customers</a>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#testimonials">Testimonials</a>
+              
+                <a href="#cta"> <button className="bg-black text-white py-2 rounded-full px-4  font-medium inline-flex items-center justify-center tracking-tight">
+                  Get for free
+                </button></a>
               </nav>
             </div>
           </div>
