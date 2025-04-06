@@ -1,5 +1,6 @@
 import productImage from "@/assets/product-image.png";
 import solarImage from "@/assets/solar.jpg";
+import solarNew from "@/assets/solarNew.png";
 import pyramidImage from "@/assets/pyramid.png";
 import tubeImage from "@/assets/tube.png";
 import Image from "next/image";
@@ -28,13 +29,13 @@ export const ProductShowcase = () => {
             <div className="relative ">
             <div className="relative w-full h-auto mt-10">
     <Image
-      src={solarImage}
+      src={solarNew}
       alt="Solar Product"
       className="w-full h-full object-cover shadow-lg"
     />
     {/* Dark overlay with centered text */}
     <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center">
-      <h2 className="text-white/90 text-3xl font-bold text-center px-4">
+      <h2 className="text-white/80 text-3xl font-bold text-center px-4">
       Transforming Sunlight Into Reliable Energy
 Through Our State-of-the-Art Solar Farms –
 Powering Businesses & Communities
