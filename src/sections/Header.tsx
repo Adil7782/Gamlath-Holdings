@@ -21,6 +21,7 @@ export const Navbar = () => {
                 <a href="#about">About</a>
                 <a href="#customers">Customers</a>
                 <a href="#features">Features</a>
+                <a href="#gallery">Gallery</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#testimonials">Testimonials</a>
               

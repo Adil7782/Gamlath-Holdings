@@ -2,6 +2,7 @@
 import ArrowIcon from "@/assets/arrow-right.svg";
 import cogImage from "@/assets/cog.png";
 import cylinderImage from "@/assets/cylinder.png";
+import panel from "@/assets/panel.png";
 import noodleImage from "@/assets/noodle.png";
 import Image from "next/image";
 import {
@@ -29,7 +30,7 @@ export const Hero = () => {
             <div className="tag text-2xl">
             Go Solar Go Green With Us
             </div>
-            <h1 className="font-bold tracking-tighter text-5xl md:text-7xl bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">
+            <h1 className="font-bold tracking-tighter text-5xl md:text-7xl bg-gradient-to-b from-[#001E80] to-black text-transparent bg-clip-text mt-6">
               Pathway to Productivity  With
               Gamlath ECO Holdings
             </h1>
@@ -47,7 +48,7 @@ export const Hero = () => {
           <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
             <motion.img
               src={cogImage.src}
-              alt="cog"
+              alt="panel"
                className="md:absolute md:h-full md:w-auto md:max-w-none md:left-6 lg:left-8 "
                animate={{
                 translateY:[-30,30]

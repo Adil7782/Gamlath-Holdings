@@ -27,7 +27,9 @@ const nextConfig = {
 
     return config;
   },
-
+  images: {
+    domains: ['images.unsplash.com'], // Allow Unsplash images
+  },
   // ...other config
 };
 
