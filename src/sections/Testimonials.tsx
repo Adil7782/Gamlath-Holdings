@@ -7,6 +7,8 @@ import avatar6 from "@/assets/avatar-6.png";
 import avatar7 from "@/assets/avatar-7.png";
 import avatar8 from "@/assets/avatar-8.png";
 import avatar9 from "@/assets/avatar-9.png";
+import Image from "next/image";
+import { twMerge } from "tailwind-merge";
 
 const testimonials = [
   {
@@ -65,6 +67,77 @@ const testimonials = [
   },
 ];
 
+
+const first = testimonials.slice(0,3)
+const second = testimonials.slice(3,6)
+const third = testimonials.slice(6,9)
+
+
+const TestimonialsColumns = (prop: { className?:string,testimonials: typeof testimonials }) => {
+  return (
+    <div className={twMerge("flex flex-col gap-6 mt-10  [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]",prop.className)}>
+      {prop.testimonials.map((t, index) => (
+        <div key={index} className="card-class">
+          <div>
+            {t.text}
+            <div className="flex items-center gap-2 mt-5">
+              <Image
+                src={t.imageSrc}
+                alt={t.name}
+                width={50}
+                height={50}
+                className="rounded-full"
+              />
+              <div className="flex flex-col">
+                <div className="font-medium tracking-tight leading-5">
+                  {t.name}
+                </div>
+                <div className="leading-5 text-sm tracking-tighter text-gray-500">
+                  {t.username}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+
+
 export const Testimonials = () => {
-  return null;
+  return (
+    <>
+     <section className="bg-white py-1">
+     <div>
+     
+          <div className="section-heading pt-6">
+            <div>
+            
+            </div>
+         <div className="flex justify-center">
+          <h2 className="tag ">Testimonials </h2>
+         </div>
+
+         <h2 className=" my-5 section-title">What our clients says </h2>
+
+          <p className="section-desc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+            sequi aspernatur dolorem corrupti quas, beatae veniam quam fugit
+            labore unde nisi velit facilis accusantium vel, temporibus numquam
+            excepturi iusto sint!
+          </p>
+          </div>
+
+          <div className="flex justify-center gap-6">
+          <TestimonialsColumns testimonials={first} />
+          <TestimonialsColumns testimonials={second} className="hidden md:block" />
+          <TestimonialsColumns testimonials={third} className="hidden lg:flex"/>
+          </div>
+
+     </div>
+     </section>
+    </>
+  );
 };

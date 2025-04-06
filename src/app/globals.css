@@ -33,4 +33,7 @@
     .section-heading {
         @apply max-w-[540px] mx-auto
     }
+
+    .card-class{
+        @apply p-10 border border-[#222222]/10 rounded-3xl shadow-lg max-w-xs w-full     }
 }
