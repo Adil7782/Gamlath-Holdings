@@ -30,7 +30,7 @@ export const Footer = () => {
             <SocialYoutube />
 
           </div>
-          <p className="mt-4">&copy; 2025 Emmanuels Lanka. All rights reserved</p>
+          <p className="mt-4">&copy; 2025 Gamlath Eco Holding (PVT) Ltd. All rights reserved</p>
         </div>
       </section>
     </>

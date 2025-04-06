@@ -27,19 +27,17 @@ export const Hero = () => {
         <div className="md:flex">
           <div className="md:w-[478px]">
             <div className="tag text-2xl">
-              Welcome to our platform
+            Go Solar Go Green With Us
             </div>
             <h1 className="font-bold tracking-tighter text-5xl md:text-7xl bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">
-              Pathway to Productivity
+              Pathway to Productivity  With
+              Gamlath ECO Holdings
             </h1>
             <p className="text-xl tracking-tight text-[#010D3E] mt-6">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Repellat, laboriosam? Obcaecati neque ipsam dicta alias temporibus
-              libero quis ullam consequatur! Magni nostrum excepturi aliquam a
-              dolores harum debitis aliquid minus.
+            Harnessing solar energy for a sustainable future. We provide cutting-edge solar solutions to power homes and businesses efficiently.
             </p>
             <div className="flex gap-2 mt-[30px] items-center">
-              <button className="btn btn-primary">Get for free</button>
+              <button className="btn btn-primary">Order Now</button>
               <button className="btn btn-text gap-1">
                 <span>Learn more </span>
                 <ArrowIcon className="h-6 w-6" />

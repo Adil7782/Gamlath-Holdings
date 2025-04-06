@@ -3,52 +3,53 @@ import {twMerge} from "tailwind-merge";
 
 const pricingTiers = [
   {
-    title: "Free",
-    monthlyPrice: 0,
-    buttonText: "Get started for free",
+    title: "Residential Basic",
+    monthlyPrice: 0, // or show estimated savings instead
+    buttonText: "Get free assessment",
     popular: false,
     inverse: false,
     features: [
-      "Up to 5 project members",
-      "Unlimited tasks and projects",
-      "2GB storage",
-      "Integrations",
-      "Basic support",
+      "Up to 5kW solar system",
+      "Basic solar panel installation",
+      "Grid-tied system",
+      "Standard monitoring",
+      "5-year warranty",
+      "Basic maintenance support",
     ],
   },
   {
-    title: "Pro",
-    monthlyPrice: 9,
-    buttonText: "Sign up now",
+    title: "Commercial Pro",
+    monthlyPrice: 499, // or could be project-based pricing
+    buttonText: "Request consultation",
     popular: true,
     inverse: true,
     features: [
-      "Up to 50 project members",
-      "Unlimited tasks and projects",
-      "50GB storage",
-      "Integrations",
-      "Priority support",
-      "Advanced support",
-      "Export support",
+      "Up to 50kW solar system",
+      "High-efficiency panels",
+      "Smart energy monitoring",
+      "10-year warranty",
+      "Priority technical support",
+      "Battery backup options",
+      "ROI analysis report",
     ],
   },
   {
-    title: "Business",
-    monthlyPrice: 19,
-    buttonText: "Sign up now",
+    title: "Industrial Premium",
+    monthlyPrice: 1999, // typically custom quoted
+    buttonText: "Contact sales",
     popular: false,
     inverse: false,
     features: [
-      "Up to 5 project members",
-      "Unlimited tasks and projects",
-      "200GB storage",
-      "Integrations",
+      "100kW+ solar farms",
+      "Premium tier-1 solar panels",
+      "24/7 monitoring system",
+      "15-year comprehensive warranty",
       "Dedicated account manager",
-      "Custom fields",
-      "Advanced analytics",
-      "Export capabilities",
-      "API access",
-      "Advanced security features",
+      "Custom energy solutions",
+      "Advanced load analytics",
+      "Government incentive assistance",
+      "API integration for smart grids",
+      "Onsite security features",
     ],
   },
 ];
@@ -61,10 +62,7 @@ export const Pricing = () => {
           <div className="section-heading pt-6">
           <h2 className="section-title my-5">Pricing </h2>
           <p className="section-desc">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-            sequi aspernatur dolorem corrupti quas, beatae veniam quam fugit
-            labore unde nisi velit facilis accusantium vel, temporibus numquam
-            excepturi iusto sint!
+          Get a customized solar solution with clear, competitive pricing – designed to maximize your ROI while minimizing energy costs
           </p>
           </div>
           <div className="flex flex-col m-12 lg:flex-row lg:items-end gap-12 lg:justify-center items-center px-2">

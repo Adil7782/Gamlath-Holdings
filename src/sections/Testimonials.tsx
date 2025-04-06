@@ -12,58 +12,58 @@ import { twMerge } from "tailwind-merge";
 
 const testimonials = [
   {
-    text: "As a seasoned designer always on the lookout for innovative tools, Framer.com instantly grabbed my attention.",
+    text: "Gamlath Eco installed our home solar system and we've been energy-independent for 2 years now. Our electricity bills dropped by 80%!",
     imageSrc: avatar1.src,
-    name: "Jamie Rivera",
-    username: "@jamietechguru00",
+    name: "Nimal Perera",
+    username: "@eco_home_kandy",
   },
   {
-    text: "Our team's productivity has skyrocketed since we started using this tool. ",
+    text: "As a small business owner, switching to solar with Gamlath was the best financial decision. Their team handled everything from permits to installation seamlessly.",
     imageSrc: avatar2.src,
-    name: "Josh Smith",
-    username: "@jjsmith",
+    name: "Sunil Fernando",
+    username: "@fernando_tea",
   },
   {
-    text: "This app has completely transformed how I manage my projects and deadlines.",
+    text: "The industrial solar solution Gamlath designed for our factory cut our energy costs by 60% while reducing our carbon footprint significantly.",
     imageSrc: avatar3.src,
-    name: "Morgan Lee",
-    username: "@morganleewhiz",
+    name: "Rajitha Jayawardena",
+    username: "@ceo_garmentslk",
   },
   {
-    text: "I was amazed at how quickly we were able to integrate this app into our workflow.",
+    text: "Impressed with Gamlath's after-sales service. When we had an inverter issue, their technician arrived within 24 hours to fix it under warranty.",
     imageSrc: avatar4.src,
-    name: "Casey Jordan",
-    username: "@caseyj",
+    name: "Priyanka Rathnayake",
+    username: "@greenliving_lk",
   },
   {
-    text: "Planning and executing events has never been easier. This app helps me keep track of all the moving parts, ensuring nothing slips through the cracks.",
+    text: "Our hotel's solar installation by Gamlath pays for itself daily. Guests love our eco-friendly approach and we save thousands monthly on power.",
     imageSrc: avatar5.src,
-    name: "Taylor Kim",
-    username: "@taylorkimm",
+    name: "Damith Silva",
+    username: "@silkroutehotels",
   },
   {
-    text: "The customizability and integration capabilities of this app are top-notch.",
+    text: "Gamlath's solar+storage solution kept our medical clinic running during power cuts. Reliable, professional, and truly life-saving technology.",
     imageSrc: avatar6.src,
-    name: "Riley Smith",
-    username: "@rileysmith1",
+    name: "Dr. Anjali Weerasinghe",
+    username: "@healthplus_kln",
   },
   {
-    text: "Adopting this app for our team has streamlined our project management and improved communication across the board.",
+    text: "As an environmental consultant, I recommend Gamlath to all my clients. Their technical expertise and quality components are unmatched in Sri Lanka.",
     imageSrc: avatar7.src,
-    name: "Jordan Patels",
-    username: "@jpatelsdesign",
+    name: "Ashan Corea",
+    username: "@ecoconsult_lk",
   },
   {
-    text: "With this app, we can easily assign tasks, track progress, and manage documents all in one place.",
+    text: "The agricultural solar pumps Gamlath installed transformed our farm's irrigation. No more diesel costs and we can water crops 24/7 using sunlight!",
     imageSrc: avatar8.src,
-    name: "Sam Dawson",
-    username: "@dawsontechtips",
+    name: "Chaminda Bandara",
+    username: "@organic_farmer",
   },
   {
-    text: "Its user-friendly interface and robust features support our diverse needs.",
+    text: "Gamlath's solar financing options made going green affordable. Our monthly solar payments are less than our old electricity bills!",
     imageSrc: avatar9.src,
-    name: "Casey Harper",
-    username: "@casey09",
+    name: "Sanduni Herath",
+    username: "@savvy_homeowner",
   },
 ];
 
@@ -117,22 +117,19 @@ export const Testimonials = () => {
             
             </div>
          <div className="flex justify-center">
-          <h2 className="tag ">Testimonials </h2>
+          <h2 className="tag ">Client Stories </h2>
          </div>
 
-         <h2 className=" my-5 section-title">What our clients says </h2>
+         <h2 className=" my-5 section-title">Sustainable Future </h2>
 
           <p className="section-desc">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
-            sequi aspernatur dolorem corrupti quas, beatae veniam quam fugit
-            labore unde nisi velit facilis accusantium vel, temporibus numquam
-            excepturi iusto sint!
+          Hear from homeowners, businesses, and industries that have transformed their energy usage with our solar solutions
           </p>
           </div>
 
           <div className="flex justify-center gap-6">
           <TestimonialsColumns testimonials={first} />
-          <TestimonialsColumns testimonials={second} className="hidden md:block" />
+          <TestimonialsColumns testimonials={second} className="hidden md:flex" />
           <TestimonialsColumns testimonials={third} className="hidden lg:flex"/>
           </div>
 
