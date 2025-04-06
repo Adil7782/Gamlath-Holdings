@@ -6,8 +6,8 @@ import { twMerge } from "tailwind-merge";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Light Saas Landing Page",
-  description: "Template created by Frontend Tribe",
+  title: "Gamlath Eco Holding",
+  description: "Gamlath Solar Solutions",
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative scroll-smooth">
-      <body className={clsx(dmSans.className, "antialiased bg-[#EAEEFE] scroll-smooth")}>
+      <body className={twMerge(dmSans.className, "antialiased bg-[#EAEEFE] scroll-smooth")}>
         {children}
       </body>
     </html>
