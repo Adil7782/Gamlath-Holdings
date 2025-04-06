@@ -37,10 +37,10 @@ const Gallery = () => {
   return (
      <section>
     <div>
-        <div className="section-heading pt-12 ">
+        <div className="section-heading pt- ">
           <h2 className="section-title my-6">Our Solar Projects in Action </h2>
           <p className="section-desc">
-          Explore our successful solar installations powering homes, businesses, and industries nationwide. Each project showcases our commitment to quality, innovation, and sustainable energy solutions tailored to Sri Lanka's needs.          </p>
+          Explore our successful solar installations powering homes, businesses, and industries nationwide. Each project showcases our commitment to quality, innovation, and sustainable energy solutions tailored to Sri Lanka&apos;s needs.          </p>
           
 
           
