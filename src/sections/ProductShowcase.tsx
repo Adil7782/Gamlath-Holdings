@@ -27,33 +27,31 @@ export const ProductShowcase = () => {
             </div>
 
             <div className="relative ">
-            <div className="relative w-full h-auto mt-10">
-    <Image
-      src={solarNew}
-      alt="Solar Product"
-      className="w-full h-full object-cover shadow-lg"
-    />
-    {/* Dark overlay with centered text */}
-    <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center">
-      <h2 className="text-white/80 text-3xl font-bold text-center px-4">
-      Transforming Sunlight Into Reliable Energy
-Through Our State-of-the-Art Solar Farms –
-Powering Businesses & Communities
-With Clean, Cost-Effective Solutions
-      </h2>
-    </div>
-  </div>
+              <div className="relative w-full h-auto mt-10">
+                <Image
+                  src={solarNew}
+                  alt="Solar Product"
+                  className="w-full h-full object-cover shadow-lg"
+                />
+                {/* Dark overlay with centered text */}
+                <div className="absolute inset-0 bg-black/70 flex items-center justify-center p-4">
+              <h2 className="text-white/80 text-lg sm:text-xl md:text-3xl lg:text-6xl font-bold text-center px-2 md:px-4">
+                Transforming Sunlight Into Reliable Energy Through Our
+                State-of-the-Art Solar Solutions – Powering Sri Lanka With Clean Energy
+              </h2>
+            </div>
+              </div>
               <Image
                 src={pyramidImage}
                 alt="pyramid"
-                className=" absolute -top-32 -right-36"
+                className=" absolute hidden md:block -top-32 -right-36"
                 height={262}
                 width={262}
               />
               <Image
                 src={tubeImage}
                 alt="tube"
-                className=" absolute bottom-4 -left-36"
+                className=" absolute bottom-4  hidden md:block -left-36"
                 height={248}
               />
             </div>
