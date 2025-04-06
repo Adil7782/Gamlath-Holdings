@@ -1,60 +1,65 @@
-"use client";
 import productImage from "@/assets/product-image.png";
+import solarImage from "@/assets/solar.jpg";
+import solarNew from "@/assets/solarNew.png";
 import pyramidImage from "@/assets/pyramid.png";
 import tubeImage from "@/assets/tube.png";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
 
 export const ProductShowcase = () => {
-  const sectionRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"],
-  });
-  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
   return (
-    <section
-      ref={sectionRef}
-      className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-24 overflow-x-clip"
-    >
-      <div className="container">
-        <div className="section-heading">
-          <div className="flex justify-center">
-            <div className="tag">Boost your productivity</div>
+    <>
+      <section className="p-5 pt-24 bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF overflow-x-clip">
+        <div className="">
+          <div>
+            <div className="section-heading">
+              <div className="flex justify-center items-center">
+                <div className="tag">Sustainable Energy Solutions</div>
+              </div>
+              <h2 className="section-title my-5">
+                Powering a Brighter, Greener Future
+              </h2>
+              <p className="section-desc">
+                At Gamlath Eco Holding, we deliver cutting-edge solar technology
+                to maximize efficiency and reduce energy costs. Our expert
+                solutions help homes and businesses embrace renewable power
+                seamlessly.
+              </p>
+            </div>
+
+            <div className="relative ">
+            <div className="relative w-full h-auto mt-10">
+    <Image
+      src={solarNew}
+      alt="Solar Product"
+      className="w-full h-full object-cover shadow-lg"
+    />
+    {/* Dark overlay with centered text */}
+    <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center">
+      <h2 className="text-white/80 text-3xl font-bold text-center px-4">
+      Transforming Sunlight Into Reliable Energy
+Through Our State-of-the-Art Solar Farms –
+Powering Businesses & Communities
+With Clean, Cost-Effective Solutions
+      </h2>
+    </div>
+  </div>
+              <Image
+                src={pyramidImage}
+                alt="pyramid"
+                className=" absolute -top-32 -right-36"
+                height={262}
+                width={262}
+              />
+              <Image
+                src={tubeImage}
+                alt="tube"
+                className=" absolute bottom-4 -left-36"
+                height={248}
+              />
+            </div>
           </div>
-          <h2 className="section-title mt-5">
-            A more effective way to track progress
-          </h2>
-          <p className="section-description mt-5">
-            Effortlessly turn your ideas into a fully functional, responsive,
-            SaaS website in just minutes with this template.
-          </p>
         </div>
-        <div className="relative">
-          <Image src={productImage} alt="Product Image" className="mt-10" />
-          <motion.img
-            src={pyramidImage.src}
-            alt="Pyramid Image"
-            height={262}
-            width={262}
-            className="hidden md:block absolute -right-36 -top-32"
-            style={{
-              translateY,
-            }}
-          />
-          <motion.img
-            src={tubeImage.src}
-            alt="Tube image"
-            height={248}
-            width={248}
-            className="hidden md:block absolute bottom-24 -left-36"
-            style={{
-              translateY,
-            }}
-          />
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
